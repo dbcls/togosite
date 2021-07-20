@@ -9,7 +9,7 @@
           "label": "Gene biotype",
           "description": "Gene or transcript classification annotated in Ensembl",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_biotype_ensembl",
-          "type": "ensembl_gene",
+          "idType": "ensembl_gene",
           "dataSource": {
             "label": "Ensembl",
             "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
@@ -21,7 +21,7 @@
           "label": "Chromosome",
           "description": "Chromosome where a gene is located",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_chromosome_ensembl",
-          "type": "ensembl_gene",
+          "idType": "ensembl_gene",
           "dataSource": {
             "label": "Ensembl human release 102",
             "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
@@ -33,7 +33,7 @@
           "label": "# of exons",
           "description": "Number of exons for each transcript of each gene",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_number_of_exons_ensembl",
-          "type": "ensembl_transcript",
+          "idType": "ensembl_transcript",
           "dataSource": {
             "label": "Ensembl human release 102",
             "url": "http://nov2020.archive.ensembl.org/Homo_sapiens/Info/Index",
@@ -45,7 +45,7 @@
           "label": "# of paralogs",
           "description": "Number of duplicated genes (paralogs) in each human gene calculated based on HomoloGene",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_number_of_paralogs_homologene",
-          "type": "ncbigene",
+          "idType": "ncbigene",
           "dataSource": {
             "label": "HomoloGene",
             "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
@@ -57,7 +57,7 @@
           "label": "Evolutionary divergence",
           "description": "Most distant organisms from human that have orthologous genes in HomoloGene",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_evolutionary_conservation_homologene",
-          "type": "ncbigene",
+          "idType": "ncbigene",
           "dataSource": {
             "label": "HomoloGene",
             "url": "https://www.ncbi.nlm.nih.gov/homologene/statistics/",
@@ -69,7 +69,7 @@
           "label": "High-level expression",
           "description": "Tissues in which a gene was tissue-specific highly expressed only in one of 34 tissues of RefEx",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_refex",
-          "type": "ncbigene",
+          "idType": "ncbigene",
           "dataSource": {
             "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
             "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
@@ -81,7 +81,7 @@
           "label": "Low-level expression",
           "description": "Tissues in which a gene was tissue-specific lowly expressed only in one of 34 tissues of RefEx",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_low_level_expression_refex",
-          "type": "ncbigene",
+          "idType": "ncbigene",
           "dataSource": {
             "label": "Calculations for tissue specificity of genechip human GSE7307 from RefEx",
             "url": "https://doi.org/10.6084/m9.figshare.4028700.v3",
@@ -93,7 +93,7 @@
           "label": "Expressed in tissues",
           "description": "Tissues in which a gene is tissue-specific highly expressed in 48 tissues of GTEx",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_high_level_expression_gtex6",
-          "type": "ensembl_gene",
+          "idType": "ensembl_gene",
           "dataSource": {
             "label": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
             "url": "https://doi.org/10.1101/311563",
@@ -105,7 +105,7 @@
           "label": "Not expressed in tissues",
           "description": "Tissues in which expression of a gene is not detected in 48 tissues of GTEx",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_not_expressed_in_tissues_gtex",
-          "type": "ensembl_gene",
+          "idType": "ensembl_gene",
           "dataSource": {
             "label": "Supplementary Table 1 of A systematic survey of human tissue-specific gene expression and splicing reveals new opportunities for therapeutic target identification and evaluation; R. Y. Yang et al.; bioRxiv 311563",
             "url": "https://doi.org/10.1101/311563",
@@ -117,7 +117,7 @@
           "label": "Transcription factors",
           "description": "Transcription factors with predicted target genes in ChIP-Atlas",
           "data": "https://integbio.jp/togosite/sparqlist/api/gene_transcription_factors_chip_atlas",
-          "type": "ensembl_gene",
+          "idType": "ensembl_gene",
           "dataSource": {
             "label": "ChIP-Atlas",
             "url": "http://dbarchive.biosciencedbc.jp/kyushu-u/hg38/target/",
@@ -135,7 +135,7 @@
           "label": "Protein domains",
           "description": "Protein domains from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_domains_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -147,7 +147,7 @@
           "label": "Cellular component",
           "description": "Functional annotations (GO terms) derived from the Cellular component category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_cellular_component_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -159,7 +159,7 @@
           "label": "Biological process",
           "description": "Functional annotations (GO terms) derived from the Biological process category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_biological_process_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -171,7 +171,7 @@
           "label": "Molecular function",
           "description": "Functional annotations (GO terms) derived from the Molecular function category of GeneOntology, which Uniprot has assigned to each human protein with evidence information",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_molecular_function_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -183,7 +183,7 @@
           "label": "Ligands",
           "description": "Classification by non-protein molecules which bind/react with proteins in Function section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_ligands_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -195,7 +195,7 @@
           "label": "Molecular mass",
           "description": "Molecular weight of the protein including information from multiple isoforms in Sequences section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_molecular_mass_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -207,7 +207,7 @@
           "label": "PTMs",
           "description": "Classification by types of post-translational modifications, including S-S bonds (disulfide bonds) in Amino acid modifications section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_ptms_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -219,7 +219,7 @@
           "label": "# of transmembrane domains",
           "description": "Number of transmembrane domains. A group of molecules forming a family, such as channels, may have the same number of domains in Topology section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_transmembrane_domains_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -231,7 +231,7 @@
           "label": "# of phosphorylation sites",
           "description": "Number of phosphorylation at Ser/Thr/Tyr, which may create an activation state for the protein and acts like a switch in Amino acid modifications section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_phosphorylation_sites_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -243,7 +243,7 @@
           "label": "# of glycosylation sites",
           "description": "Number of glycosylation sites, including N-linked,O-linked and others in Amino acid modifications section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_number_of_glycosylation_sites_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -255,7 +255,7 @@
           "label": "Disease-related proteins",
           "description": "Disease-related proteins in Pathology & Biotech section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_disease_related_proteins_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -267,7 +267,7 @@
           "label": "Tissues w/expression reported",
           "description": "Classification based on the name of the tissue from which the clone was isolated in the reference describing the protein sequence in Tissue section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_isolation_source_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -279,7 +279,7 @@
           "label": "Evidence of existence",
           "description": "Classification by the basis of protein expression, such as whether it has been identified as a protein or transcript in Expression section from neXtProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/protein_evidence_of_existence_nextprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -297,7 +297,7 @@
           "label": "Structure data existence",
           "description": "Uniprot entries having 3D structure data in PDB in Structure section from Uniprot",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_data_existence_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -309,7 +309,7 @@
           "label": "# of alpha-helices",
           "description": "Number of 'Helix' entities counted in each entry of PDB",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_alpha_helices_pdb",
-          "type": "pdb",
+          "idType": "pdb",
           "dataSource": {
             "label": "",
             "url": "",
@@ -321,7 +321,7 @@
           "label": "# of beta-sheets",
           "description": "Number of 'Sheet' entities counted in each entry of PDB",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_beta_sheets_pdb",
-          "type": "pdb",
+          "idType": "pdb",
           "dataSource": {
             "label": "",
             "url": "",
@@ -333,7 +333,7 @@
           "label": "# of peptides in a PDB entry",
           "description": "The number of peptides in a PDB entry",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_number_of_peptides_pdb",
-          "type": "pdb",
+          "idType": "pdb",
           "dataSource": {
             "label": "",
             "url": "",
@@ -345,7 +345,7 @@
           "label": "Other related molecules",
           "description": "Nonpeptide molecules related protein structures including water, metal ions, and low molecular weight compounds such as glycerol used to make crystals",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_other_related_molecules_pdb",
-          "type": "pdb",
+          "idType": "pdb",
           "dataSource": {
             "label": "",
             "url": "",
@@ -357,7 +357,7 @@
           "label": "Analysis methods",
           "description": "Classification by the method used to determine the three-dimensional structure in Experimental method section from PDB",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_analysis_methods_pdb",
-          "type": "pdb",
+          "idType": "pdb",
           "dataSource": {
             "label": "",
             "url": "",
@@ -369,7 +369,7 @@
           "label": "Crystallization temperature",
           "description": "Temperature of the crystallization solution obtained in Crystallization Conditions section from PDB",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_temperature_pdb",
-          "type": "pdb",
+          "idType": "pdb",
           "dataSource": {
             "label": "",
             "url": "",
@@ -381,7 +381,7 @@
           "label": "Crystallization pH",
           "description": "pH value of the crystallization solution in Crystallization Conditions section from PDB",
           "data": "https://integbio.jp/togosite/sparqlist/api/structure_crystallization_ph_pdb",
-          "type": "pdb",
+          "idType": "pdb",
           "dataSource": {
             "label": "",
             "url": "",
@@ -399,7 +399,7 @@
           "label": "Proteins in pathway",
           "description": "Proteins participating as components classified by pathway (reaction) from Reactome",
           "data": "https://integbio.jp/togosite/sparqlist/api/interaction_proteins_in_pathway_reactome",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -411,7 +411,7 @@
           "label": "Compounds in pathway",
           "description": "Compounds participating as components classified by pathway (reaction) from Reactome",
           "data": "https://integbio.jp/togosite/sparqlist/api/interaction_compounds_in_pathway_reactome",
-          "type": "chebi",
+          "idType": "chebi",
           "dataSource": {
             "label": "",
             "url": "",
@@ -423,7 +423,7 @@
           "label": "# of interacting proteins",
           "description": "Classification of uniprot proteins by the number of target proteins they interact with in Interaction section from UniProt",
           "data": "https://integbio.jp/togosite/sparqlist/api/interaction_number_of_interacting_proteins_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -435,7 +435,7 @@
           "label": "ChEMBL assay existence",
           "description": "Uniprot entries classified according to the presence or absence of a method to detect direct protein-compound interactions (ChEMBL assay)",
           "data": "https://integbio.jp/togosite/sparqlist/api/interaction_chembl_assay_existence_uniprot",
-          "type": "uniprot",
+          "idType": "uniprot",
           "dataSource": {
             "label": "",
             "url": "",
@@ -453,7 +453,7 @@
           "label": "Substance type",
           "description": "Classification based on the type of drug, such as compound or nucleic acid drugs from ChEMBL",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_substance_type_chembl",
-          "type": "chembl_compound",
+          "idType": "chembl_compound",
           "dataSource": {
             "label": "",
             "url": "",
@@ -465,7 +465,7 @@
           "label": "Chemical role",
           "description": "Classification based on the chemical roles, such as antioxidant or environmental contaminant from ChEBI",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_chemical_role_chebi",
-          "type": "chebi",
+          "idType": "chebi",
           "dataSource": {
             "label": "",
             "url": "",
@@ -477,7 +477,7 @@
           "label": "Application type",
           "description": "Classification based on the application types, such as pharmaceutical or pesticide from ChEBI",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_application_type_chebi",
-          "type": "chebi",
+          "idType": "chebi",
           "dataSource": {
             "label": "",
             "url": "",
@@ -489,7 +489,7 @@
           "label": "Action type",
           "description": "Classification based on the mechanism of action, such as an inhibitor or an antagonist from ChEMBL",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_action_type_chembl",
-          "type": "chembl_compound",
+          "idType": "chembl_compound",
           "dataSource": {
             "label": "",
             "url": "",
@@ -501,7 +501,7 @@
           "label": "Biological role",
           "description": "Classification based on the biological roles, such as inhibitor or antimicrobial agent from ChEBI",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_biological_role_chebi",
-          "type": "chebi",
+          "idType": "chebi",
           "dataSource": {
             "label": "",
             "url": "",
@@ -513,7 +513,7 @@
           "label": "Drug indication",
           "description": "Classification of diseases for which drugs are indicated, based on hierarchical data using MeSH, a life science thesaurus from ChEMBL",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_drug_indication_mesh_chembl",
-          "type": "chembl_compound",
+          "idType": "chembl_compound",
           "dataSource": {
             "label": "",
             "url": "",
@@ -525,7 +525,7 @@
           "label": "Drug development phase",
           "description": "Classification based on the drug's development phase (research stage, phase I-III, and post-launch) from ChEMBL",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_drug_development_phase_chembl",
-          "type": "chembl_compound",
+          "idType": "chembl_compound",
           "dataSource": {
             "label": "",
             "url": "",
@@ -537,7 +537,7 @@
           "label": "PubChem ATC classification",
           "description": "Classification of a medicine (in PubChem) according to its medicinal properties (WHO ATC Code)",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_atc_classification_pubchem",
-          "type": "pubchem_compound",
+          "idType": "pubchem_compound",
           "dataSource": {
             "label": "",
             "url": "",
@@ -549,7 +549,7 @@
           "label": "ChEMBL ATC classification",
           "description": "Classification of a medicine (in ChEMBL) according to its medicinal properties (WHO ATC Code)",
           "data": "https://integbio.jp/togosite/sparqlist/api/compound_atc_classification_chembl",
-          "type": "chembl_compound",
+          "idType": "chembl_compound",
           "dataSource": {
             "label": "",
             "url": "",
@@ -567,7 +567,7 @@
           "label": "Diseases in Mondo",
           "description": "Subcategories in the Disease or disorder category in the Mondo Disease Ontology (Mondo)",
           "data": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_mondo",
-          "type": "mondo",
+          "idType": "mondo",
           "dataSource": {
             "label": "",
             "url": "",
@@ -579,7 +579,7 @@
           "label": "Diseases in MeSH",
           "description": "Subcategories in the Disease category in Medical Subject Headings (MeSH)",
           "data": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_mesh",
-          "type": "mesh",
+          "idType": "mesh",
           "dataSource": {
             "label": "",
             "url": "",
@@ -591,7 +591,7 @@
           "label": "Diseases in NANDO",
           "description": "Japanese rare and intractable disease categories in the Nanbyo Disease Ontology (NANDO)",
           "data": "https://integbio.jp/togosite/sparqlist/api/disease_diseases_nando",
-          "type": "nando",
+          "idType": "nando",
           "dataSource": {
             "label": "",
             "url": "",
@@ -603,7 +603,7 @@
           "label": "Cross referenced disease DBs in Mondo",
           "description": "Number of entries linked to Mondo in each of approx. 70 disease related databases from database cross reference in Mondo",
           "data": "https://integbio.jp/togosite/sparqlist/api/disease_related_dbs_mondo",
-          "type": "mondo",
+          "idType": "mondo",
           "dataSource": {
             "label": "",
             "url": "",
@@ -615,7 +615,7 @@
           "label": "Phenotypic abnormality",
           "description": "Classification the subcategories of the Phenotypic abnormality categories of the Human Phenotype Ontology (HPO)",
           "data": "https://integbio.jp/togosite/sparqlist/api/disease_phenotypic_abnormality_hpo",
-          "type": "hp",
+          "idType": "hp",
           "dataSource": {
             "label": "",
             "url": "",
@@ -633,7 +633,7 @@
           "label": "GWAS",
           "description": "Classification of statistically significant variants in genome-wide association studies (GWAS) based on associated traits. Obtained from GWAS catalog via TogoVar",
           "data": "https://integbio.jp/togosite/sparqlist/api/variant_gwas_togovar",
-          "type": "togovar",
+          "idType": "togovar",
           "dataSource": {
             "label": "",
             "url": "",
@@ -645,7 +645,7 @@
           "label": "Clinical significance",
           "description": "Classification of variants according to their clinical significance, such as whether they are the cause of the disease or not. Obtained from ClinVar via TogoVar",
           "data": "https://integbio.jp/togosite/sparqlist/api/variant_clinical_significance_togovar",
-          "type": "togovar",
+          "idType": "togovar",
           "dataSource": {
             "label": "",
             "url": "",
@@ -655,71 +655,253 @@
       ]
     }
   ],
-  "identifiers": {
+  "idTypes": {
     "ensembl_gene": {
       "label": "Ensembl gene",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/ensembl_gene.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=ensembl_gene,togovar"
+      }
     },
     "ensembl_transcript": {
       "label": "Ensembl transcript",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/ensembl_transcript.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,ensembl_gene",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=ensembl_transcript,togovar"
+      }
     },
     "ncbigene": {
       "label": "NCBI gene",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/ncbigene.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=ncbigene,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=ncbigene,ensembl_transcript",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=ncbigene,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=ncbigene,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=ncbigene,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=ncbigene,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=ncbigene,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=ncbigene,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=ncbigene,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=ncbigene,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=ncbigene,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=ncbigene,togovar"
+      }
     },
     "uniprot": {
       "label": "UniProt",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/uniprot.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=uniprot,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=uniprot,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=uniprot,ncbigene",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=uniprot,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=uniprot,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=uniprot,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=uniprot,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=uniprot,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=uniprot,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=uniprot,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=uniprot,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=uniprot,togovar"
+      }
     },
     "pdb": {
       "label": "PDB",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/pdb.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=pdb,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=pdb,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=pdb,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=pdb,uniprot",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=pdb,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=pdb,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=pdb,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=pdb,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=pdb,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=pdb,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=pdb,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=pdb,togovar"
+      }
     },
     "chebi": {
       "label": "ChEBI compound",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/chebi.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=chebi,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=chebi,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=chebi,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=chebi,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=chebi,pdb",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=chebi,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=chebi,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=chebi,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=chebi,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=chebi,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=chebi,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=chebi,togovar"
+      }
     },
     "chembl_compound": {
       "label": "ChEMBL compound",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/chembl_compound.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=chembl_compound,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=chembl_compound,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=chembl_compound,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=chembl_compound,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=chembl_compound,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=chembl_compound,chebi",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=chembl_compound,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=chembl_compound,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=chembl_compound,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=chembl_compound,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=chembl_compound,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=chembl_compound,togovar"
+      }
     },
     "pubchem_compound": {
       "label": "PubChem compound",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/pubchem_compound.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,chembl_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=pubchem_compound,togovar"
+      }
     },
     "mondo": {
       "label": "Mondo",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/mondo.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=mondo,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=mondo,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=mondo,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=mondo,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=mondo,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=mondo,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=mondo,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=mondo,pubchem_compound",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=mondo,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=mondo,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=mondo,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=mondo,togovar"
+      }
     },
     "mesh": {
       "label": "MeSH",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/mesh.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=mesh,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=mesh,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=mesh,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=mesh,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=mesh,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=mesh,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=mesh,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=mesh,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=mesh,mondo",
+        "nando": "https://api.togoid.jp/convert?format=json&route=mesh,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=mesh,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=mesh,togovar"
+      }
     },
     "nando": {
       "label": "NANDO",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/nando.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=nando,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=nando,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=nando,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=nando,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=nando,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=nando,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=nando,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=nando,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=nando,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=nando,mesh",
+        "hp": "https://api.togoid.jp/convert?format=json&route=nando,hp",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=nando,togovar"
+      }
     },
     "hp": {
       "label": "Human Phenotype Ontology",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/hp.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=hp,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=hp,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=hp,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=hp,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=hp,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=hp,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=hp,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=hp,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=hp,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=hp,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=hp,nando",
+        "togovar": "https://api.togoid.jp/convert?format=json&route=hp,togovar"
+      }
     },
     "togovar": {
       "label": "TogoVar variant",
       "template": "https://raw.githubusercontent.com/dbcls/togosite/develop/config/togosite-human/templates/togovar.hbs",
-      "target": true
+      "target": true,
+      "conversion": {
+        "ensembl_gene": "https://api.togoid.jp/convert?format=json&route=togovar,ensembl_gene",
+        "ensembl_transcript": "https://api.togoid.jp/convert?format=json&route=togovar,ensembl_transcript",
+        "ncbigene": "https://api.togoid.jp/convert?format=json&route=togovar,ncbigene",
+        "uniprot": "https://api.togoid.jp/convert?format=json&route=togovar,uniprot",
+        "pdb": "https://api.togoid.jp/convert?format=json&route=togovar,pdb",
+        "chebi": "https://api.togoid.jp/convert?format=json&route=togovar,chebi",
+        "chembl_compound": "https://api.togoid.jp/convert?format=json&route=togovar,chembl_compound",
+        "pubchem_compound": "https://api.togoid.jp/convert?format=json&route=togovar,pubchem_compound",
+        "mondo": "https://api.togoid.jp/convert?format=json&route=togovar,mondo",
+        "mesh": "https://api.togoid.jp/convert?format=json&route=togovar,mesh",
+        "nando": "https://api.togoid.jp/convert?format=json&route=togovar,nando",
+        "hp": "https://api.togoid.jp/convert?format=json&route=togovar,hp"
+      }
     }
   }
 }
